@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Weather Dashboard">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style.css">
+        <title>Weather Dashboard</title>
+    </head>
+    <body>
+        <header id="top-banner">
+            <h1>Weather Dashboard</h1>
+        </header>
+
+        <main style="border: 2px solid black;">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <h2 id="search-bar" style="font-weight: bolder;"> Search for a city:</h2>
+                    <form id="user-form" class="main-card">
+                        <input
+                            id="searched-location"
+                            type="text"
+                            class="form-input"
+                            placeholder="Enter City"
+                        >
+                        <button id="search-button">Search</button>
+                    </form>
+                </div>
+
+                <div class="card" id="location-options">
+                    <button data-language="Chicago" class="btn">Chicago</button>
+                    <button data-language="New York" class="btn">New York</button>
+                    <button data-language="Atlanta" class="btn">Atlanta</button>
+                    <button data-language="Los Angeles" class="btn">Los Angeles</button>
+                    <button data-language="Austin" class="btn">Austin</button>
+                    <button data-language="Seattle" class="btn">Seattle</button>
+                    <button data-language="Orlando" class="btn">Orlando</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <div class="card">
+                <h2 class="current">Current weather at location selected:</h2>
+                <div id="current-weather">
+                </div>
+                <div id="fiveday-containers" class="5-day">
+                    <h2>5 Day Forecast:</h2>
+                </div>
+            </div>
+            </div>
+
+
+            <script src="./assets/script.js"></script>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+*{margin: 0;
+}
+
+header{
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(to right, #3e61ac, #2d2490);
+    text-indent: 55%; 
+}
+
+main{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#search-button{
+    background-color: #4285c5;
+    border-radius: 10px;
+ width: 100%;
+    
+}
+
+#user-form{
+    width: 100%;
+    padding: 15px;
+    border-bottom: 2px solid gray;
+}
+
+
+.btn{
+    background-color: gray;
+    border-radius: 10px;
+    
+}
+
+.card {
+    padding: 10px;
+}
+
+#fiveday-containers{
+    background-color: #173653;
+    color: white;
+}
